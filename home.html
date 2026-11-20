@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | GitHub Issues Tracker</title>
+    <!-- css and favicon -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/github-logo.png"
+      type="image/x-icon"
+    />
+    <!-- daisy and tailwind css cnd -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#F8F9FA] min-h-screen">
+    <!-- Header / Navbar -->
+<header class="w-full bg-white border-b border-[#E5E7EB] px-6 sm:px-12 py-4">
+  <div class="max-w-[1400px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+    
+    <!-- Left Side: Logo & Title -->
+    <div class="flex items-center gap-3">
+      <!-- আপনার লোগো আইকন এখানে বসান -->
+      <img src="./assets/github-logo.png" alt="Logo" class="w-8 h-8" />
+      
+      <span class="text-xl font-bold text-[#1F2328] tracking-tight">
+        GitHub Issues Tracker
+      </span>
+    </div>
+
+    <!-- Right Side: Search Input & Button -->
+    <div class="flex items-center gap-3 w-full sm:w-auto">
+      <!-- Search Bar -->
+      <div class="relative flex-grow sm:w-64">
+        <!-- আপনার সার্চ আইকন এখানে বসান (যেমন: FontAwesome <i> বা <img>) -->
+        <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-[#656D76]">
+         <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+
+        <input 
+          type="text" 
+          placeholder="Search issues..." 
+          class="w-full pl-9 pr-3.5 py-2 text-sm text-[#1F2328] bg-white border border-[#D0D7DE] rounded-md placeholder-[#656D76] focus:outline-none focus:border-[#4A00FF] focus:ring-2 focus:ring-[#4A00FF]/20 transition"
+        />
+      </div>
+
+      <!-- + New Issue Button -->
+      <button 
+        type="button" 
+        class="bg-[#4A00FF] hover:bg-[#3B00CC] text-white text-sm font-medium px-4 py-2 rounded-md flex items-center gap-1.5 whitespace-nowrap transition cursor-pointer"
+      >
+        <!-- আপনার প্লাস আইকন এখানে বসান -->
+        <span>+</span>
+        <span>New Issue</span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<section class="max-w-[1200px] mx-auto space-y-4 py-5 shadow-sm border border-gray-300 px-4 my-8">
+    <div id="btn-container" class="flex items-center gap-3">
+        
+    </div>
+</section>
+
+<!-- js script file -->
+<script src="./js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | GitHub Issues Tracker</title>
+    <!-- css and favicon -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/github-logo.png"
+      type="image/x-icon"
+    />
+    <!-- daisy and tailwind css cnd -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google font  -->
+     <!doctype html>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#F8F9FA] min-h-screen flex items-center justify-center p-4">
+    <!-- Main Login Card -->
+    <div
+      class="bg-white w-full max-w-[440px] rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.06)] p-8 sm:p-10"
+    >
+      <!-- Header & GitHub Logo -->
+      <div class="flex flex-col items-center text-center mb-7">
+        <div class="w-16 h-16 mb-4 text-[#1F2328]">
+          <!-- GitHub Octocat SVG -->
+          <img src="./assets/github-logo.png" alt="" />
+        </div>
+        <h1 class="text-[22px] font-bold text-[#1F2328] tracking-tight">
+          GitHub Issues Tracker
+        </h1>
+        <p class="text-sm text-[#656D76] mt-1">Sign in to manage your issues</p>
+      </div>
+
+      <!-- Form -->
+      
+        <!-- Username Field -->
+        <div>
+          <label
+            for="username"
+            class="block text-sm font-medium text-[#1F2328] mb-1.5"
+          >
+            Username
+          </label>
+          <input
+            type="text"
+            id="input-username"
+            name="username"
+            placeholder="Enter Username"
+            class="w-full px-3.5 py-2.5 text-sm text-[#1F2328] bg-white border border-[#D0D7DE] rounded-lg placeholder-[#8C959F] focus:outline-none focus:border-[#4A00FF] focus:ring-2 focus:ring-[#4A00FF]/20 transition"
+          />
+          <p class="text-xs font-medium text-[#570DF8] mt-1.5">
+            Default: admin
+          </p>
+        </div>
+
+        <!-- Password Field -->
+        <div>
+          <label
+            for="password"
+            class="block text-sm font-medium text-[#1F2328] mb-1.5"
+          >
+            Password
+          </label>
+          <input
+            type="password"
+            id="input-password"
+            name="password"
+            placeholder="Enter Password"
+            class="w-full px-3.5 py-2.5 text-sm text-[#1F2328] bg-white border border-[#D0D7DE] rounded-lg placeholder-[#8C959F] focus:outline-none focus:border-[#4A00FF] focus:ring-2 focus:ring-[#4A00FF]/20 transition"
+          />
+          <p class="text-xs font-medium text-[#570DF8] mt-1.5">
+            Default: admin123
+          </p>
+        </div>
+
+        <!-- Sign In Button -->
+        <div class="pt-2">
+          <button id="login-btn"
+            type="submit"
+            class="w-full bg-[#4A00FF] hover:bg-[#3F00E0] active:scale-[0.99] text-white font-semibold text-sm py-2.5 px-4 rounded-lg shadow-sm transition duration-150 cursor-pointer"
+          >
+            Sign In
+          </button>
+        </div>
+     
+
+      <!-- OR Divider -->
+      <div class="relative flex items-center my-6">
+        <div class="flex-grow border-t border-[#E5E7EB]"></div>
+        <span class="flex-shrink mx-3 text-xs font-medium text-[#4B5563]"
+          >OR</span
+        >
+        <div class="flex-grow border-t border-[#E5E7EB]"></div>
+      </div>
+
+      <!-- Demo Credentials Section -->
+      <div class="text-center">
+        <p class="text-xs text-[#6B7280] mb-2.5">Demo Credentials:</p>
+        <div
+          class="bg-[#F6F8FA] rounded-lg py-3.5 px-4 text-xs text-[#1F2328] space-y-1"
+        >
+          <p><span class="font-bold">Username:</span> admin</p>
+          <p><span class="font-bold">Password:</span> admin123</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- js script file -->
+    <script src="./js/login.js"></script>
+  </body>
+</html>
